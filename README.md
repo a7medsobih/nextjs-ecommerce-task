@@ -5,7 +5,7 @@ A fully responsive **Product Page** demo built with **Next.js** that simulates a
 **Figma Design Reference:** [View Design](https://www.figma.com/design/LwAzcMC020tu1lX5CtK7La/Untitled?node-id=1-386)
 
 
-🌐 Live Demo: [View Live](https://your-vercel-link.vercel.app)
+🌐 Live Demo: [View Live](https://nextjs-ecommerce-task-three.vercel.app/)
 
 ---
 
