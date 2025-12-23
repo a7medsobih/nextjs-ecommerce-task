@@ -27,5 +27,5 @@ export async function middleware(req) {
 
 export const config = {
     // الصفحات المحمية
-    matcher: ["/dashboard/:path*", "/product/:path*"],
+    matcher: ["/dashboard/:path*"],
 };
