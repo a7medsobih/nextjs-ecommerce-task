@@ -1,0 +1,89 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+/* =========================
+   Global Design
+   ========================= */
+@theme {
+  /* Primary Brand Color */
+  --color-primary: #BE968E;
+  --color-primary-light: #d8b7b2;
+  --color-primary-dark: #a57c73;
+
+  /* Backgrounds */
+  --color-bg-main: #F5F5F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-overlay: #ECECEC66;
+
+  /* Text Colors */
+  --color-main: #000000;
+  --color-muted: #6B7280;
+  /* gray-500 */
+  --color-text-light: #9CA3AF;
+  /* gray-400 */
+
+  /* Borders */
+  --color-border-light: #E5E7EB;
+  /* gray-200 */
+
+  /* Fonts */
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+}
+
+/* =========================
+   Global Utilities
+   ========================= */
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 md:px-10;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-300;
+  }
+}
+
+/* مكان الـ dots في الأعلى */
+.custom-swiper .swiper-pagination {
+  top: 10px !important;
+  display: flex;
+  justify-content: space-between;
+  /* توزع الـ dots بالتساوي */
+  padding: 0 0;
+  /* يمكن تعديل المسافة الجانبية */
+  width: 100%;
+  left: 0;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/* شكل الـ dots كخطوط */
+.custom-swiper .swiper-pagination-bullet {
+  flex: 1;
+  /* يجعل كل dot يأخذ حيز متساوي */
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 2px;
+  border-radius: 2px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/* الخط النشط */
+.custom-swiper .swiper-pagination-bullet-active {
+  background: white;
+  flex: 2;
+}
